@@ -34,7 +34,7 @@ To note a few features:
 # Download the TensorFlow Serving Docker image and repo
 docker pull tensorflow/serving
 
-git clone https://github.com/tensorflow/serving
+git clone https://github.com/boristown/serving
 # Location of demo models
 TESTDATA="$(pwd)/serving/tensorflow_serving/servables/tensorflow/testdata"
 
