@@ -39,13 +39,13 @@ git clone https://github.com/boristown/serving
 TESTDATA="$(pwd)/serving/tensorflow_serving/servables/tensorflow/testdata"
 
 # Start TensorFlow Serving container and open the REST API port
-docker run -t --rm -p 8501:8501 \
+sudo docker run -t --rm -p 8501:8501 \
     -v "$TESTDATA/saved_model_turtle3:/models/turtle3" \
     -e MODEL_NAME=turtle3 \
     tensorflow/serving3 &
 
 # Start TensorFlow Serving container and open the REST API port
-docker run -t --rm -p 8502:8502 \
+sudo docker run -t --rm -p 8502:8502 \
     -v "$TESTDATA/saved_model_turtle5:/models/turtle5" \
     -e MODEL_NAME=turtle5 \
     tensorflow/serving5 &
